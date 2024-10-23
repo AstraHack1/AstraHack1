@@ -13,10 +13,10 @@ MainTab:CreateToggle("Farm Aç/Kapa", function(state)
     isFarming = state
     if state then
         print("Farm açıldı!") 
-        -- Burada düşmanları öldürme kodunu ekleyin
+        -- Düşmanları otomatik öldürme kodunu buraya ekleyin
         while isFarming do
             wait(1) -- Bekleme süresi
-            -- Örnek: Düşmanları öldürme işlemi
+            -- Düşmanları öldürme işlemi burada
         end
     else
         print("Farm kapatıldı!")
@@ -27,15 +27,14 @@ end)
 -- Eşya Toplama Özelliği
 MainTab:CreateButton("Eşyaları Topla", function()
     print("Eşyalar toplanıyor!") 
-    -- Burada eşya toplama işlemi için kodu ekleyin
+    -- Eşya toplama işlemi için kodu buraya ekleyin
 end)
 
 -- Işınlanma Özelliği
 MainTab:CreateDropdown("Işınlanma Noktası", {"Nokta1", "Nokta2"}, function(selected)
     print("Işınlanma noktası seçildi: " .. selected)
-    -- Burada seçilen noktaya ışınlanma kodunu ekleyin
+    -- Seçilen noktaya ışınlanma kodunu buraya ekleyin
 end)
 
 -- UI'yi Göster
-Library:C
-reateWindow("Astra Hile Menüsü Açıldı")
+Library:CreateWindow("Astra Hile Menüsü Açıldı")
