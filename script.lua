@@ -1,5 +1,5 @@
 -- UI Kütüphanesini Yükle
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstraHack1/AstraHack1/main/Library.lua"))()
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/AstraHack1/script.lua/main/MainLoader.lua"))()
 
 -- Pencere Oluştur
 local Window = Library:CreateWindow("Astra Hile Menüsü", Color3.fromRGB(0, 0, 0))
